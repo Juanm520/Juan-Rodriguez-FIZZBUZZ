@@ -1,22 +1,12 @@
-const prompt = require("prompt-sync")()
+// Desafío FizzBuzz
 
-// Inicia ejercicio FizzBuzz
+// Este programa debe imprimir los números del 1 al 1000
+// - Si es divisible por 3, imprime "Fizz"
+// - Si es divisible por 5, imprime "Buzz"
+// - Si es divisible por ambos, imprime "Fizzbuzz" (con "b" minúscula)
+// - Si no, imprime el número
 
-// Limite para el FIZZBUZZ
-let limite = 0
-do {
-    limite = Number(prompt("Ingrese el numero maximo para FIZZBUZZ (Mayor a 1 y Menor a 50): "))
-    } while ( limite < 1 || limite > 50)
-
-//Iteración para FIZZBUZZ
-for (let numero = 1; numero <= limite; numero++) {
-    if (numero % 3 === 0 && numero % 5 === 0) {
-        console.log("FIZZBUZZ")
-    } else if (numero % 3 === 0) {
-        console.log("FIZZ")
-    } else if (numero % 5 === 0) {
-        console.log("BUZZ")
-    } else {
-        console.log(numero)
-    }
+for (let i = 1; i <= 1000; i++) {
+    // Escribe tu lógica de FizzBuzz aquí
+    console.log(i); // Reemplaza esta línea con tu lógica
 }
